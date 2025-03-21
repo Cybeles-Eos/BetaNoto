@@ -62,7 +62,7 @@ function Header(){
                   <span></span>
                </button>
             </ul>
-            <button onClick={toggleMenu} className={`${style.menu} .dis_u_drg`}>
+            <button onClick={toggleMenu} className={`${style.menu} dis_u_drg`}>
                {menuBtn_icon}
             </button>
          </nav>
