@@ -1,0 +1,114 @@
+
+.card{
+   break-inside: avoid;
+   border-radius: 8px;
+   border-bottom: 1px solid var(--TextColor);
+   margin-bottom: 17px;
+
+   display: inline-block;
+   width: 100%;
+   position: relative;
+   display: flex;
+   flex-direction: column;
+}
+
+.card_header{
+   width: 100%;
+   border-radius: 8px 8px 0 0;
+   height: 2.2rem;
+   border: 1px solid var(--TextColor);
+   background-color: var(--TextColor) !important;
+   margin-bottom: .65rem;
+   display: flex;
+   justify-content: space-between;
+   align-items: center; 
+   padding: 0 .5rem 0 .9rem !important;
+   position: relative;
+  
+}
+.pinned{
+   position: absolute;
+   transform: scaleX(-1);
+   top: -1.3rem;
+   left: -1.3rem;
+
+}
+.card_title{
+   color: var(--gray-card);
+   font-size: var(--xSmall-font);
+}
+.delete_card{
+   background-color: transparent;
+   border: none;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   cursor: pointer;
+
+   -webkit-tap-highlight-color: transparent;
+}
+.card_body{
+   width: 100%;
+   padding: 15px;
+   overflow-wrap: break-word;
+}
+.card_sText{
+   line-height: 23px;
+   font-size: var(--large-font);
+   color: var(--TextColor);
+   
+}
+.text_marked{
+   opacity: .5;
+   font-style: italic;
+   text-decoration: line-through;
+}
+
+
+.card_footer{
+   margin-top: auto !important;
+   width: 100%;
+   padding: 12px 14px; 
+
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+}
+.ct_word_length{
+   color: var(--d-gray);
+   font-size: var(--xSmall-font);
+}
+.ct_tools{
+   display: flex;
+   align-items: center;
+   gap: 1rem;
+}
+.btn_tools{
+   background-color: transparent;
+   border: none;
+   cursor: pointer;
+}
+@media screen and (max-width: 1400px) { 
+   .card_header{
+      height: 2rem;
+      margin-bottom: .45rem;
+      padding-inline: .85rem;
+   }
+   .card_title{
+      font-size: var(--xxSmall-font);
+   }
+   .card_body{
+      padding: 10px;
+   }
+   .card_body > p{
+      line-height: 22px;
+      font-size: var(--small-font);
+   }
+   .ct_word_length{
+      font-size: var(--xxSmall-font);
+   }
+   .card_footer{
+      margin-top: .6rem;
+      padding: 10px 12px; 
+   }
+}

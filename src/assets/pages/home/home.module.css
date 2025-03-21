@@ -1,0 +1,137 @@
+
+.main{
+   max-width: 1500px;
+   margin: 1rem auto;
+   margin-bottom: 3rem !important;
+   padding: 13px;
+}
+
+.introduction{
+   width: 100%;
+   padding: 3rem 0;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+}
+.title{
+   font-size: 4.8rem;
+   text-align: center;
+   margin: 5rem 0 1rem 0;
+   line-height: 82px;
+   color: var(--TextColor);
+   max-width: 800px;
+}
+.label{
+   color: var(--TextColor);
+   text-align: center;
+   margin-top: 1rem;
+   line-height: 25px;
+   font-size: var(--large-font);
+   font-family: var(--Sora);
+   max-width: 580px;
+}
+.buttons_con{
+   margin-top: 2.5rem;
+   display: flex;
+   gap: 1rem;
+}
+.btn{
+   width: 9.8rem;
+   height: 2.8rem;
+   border-radius: 50rem;
+   cursor: pointer;
+   font-family: var(--Sora);
+   font-weight: 400;
+   letter-spacing: 1px;
+   font-size: var(--medium-font);
+   border: 1px solid var(--TextColor);
+   color: var(--TextColor);
+   background-color: transparent;
+}
+
+
+@media screen and (max-width: 1500px) {
+   .main{
+      margin: 1rem 1.5rem;
+   }
+}
+
+@media screen and (max-width: 880px) {
+   .title{
+      font-size: 3.5rem;
+      text-align: center;
+      margin: 3rem 0 .9rem 0;
+      line-height: 60px;
+      max-width: 600px;
+   }
+   .label{
+      text-align: center;
+      margin-top: .9rem;
+      font-size: var(--medium-font);
+      max-width: 480px;
+   }
+   .buttons_con{
+      margin-top: 1.8rem;
+      display: flex;
+      gap: 1rem;
+   }
+   .btn{
+      width: 9rem;
+      height: 2.6rem;
+      font-size: var(--small-font);
+   }
+} 
+
+@media screen and (max-width: 600px){
+   .main{
+      margin: 1rem 1rem;
+      margin-bottom: 4rem;
+   }
+   .introduction{
+      width: 100%;
+      padding: 3rem 0;
+      display: flex;
+      flex-direction: column;
+      align-items: start;
+      justify-content: start;
+   }
+   .title{
+      font-size: 2.8rem;
+      margin: 2.4rem 0 .9rem 0;
+      line-height: 47px;
+      text-align: start;
+   }
+   .label{
+      text-align: start;
+      margin-top: .9rem;
+      font-size: var(--small-font);
+   }
+}
+
+@media screen and (max-width: 450px) {
+   .main{
+      padding: 0;
+   }
+   .title{
+      font-size: 2.2rem;
+      margin: 2rem 0 .9rem 0;
+      line-height: 40px;
+      break-inside: auto;
+   }
+   .label{
+      text-align: start;
+      margin-top: .9rem;
+      font-size: var(--small-font);
+   }
+
+   .buttons_con{
+      margin-top: 2rem;
+      gap: .7rem;
+   }
+   .btn{
+      width: 7.8rem;
+      height: 2.4rem;
+      font-size: var(--xSmall-font);
+   }
+}

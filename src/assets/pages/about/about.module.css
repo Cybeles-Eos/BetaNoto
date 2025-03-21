@@ -1,0 +1,112 @@
+
+
+
+.main{
+   max-width: 1000px;
+   margin: 0 auto;
+   padding: 18px 16px;
+   padding-bottom: 10rem;
+   color: var(--TextColor);
+}
+.image{
+   width: 100%;
+   margin: 2rem 0 1.5rem 0;
+   background-color: var(--white);
+   border-radius: 10px;
+}
+
+.about_title{
+   font-family: var(--Sora);
+   font-weight: 500;
+   font-size: var(--title-size);
+   font-style: italic;
+   margin: 1rem 0 1.5rem 0;
+}
+.about_text{
+   font-size: var(--xLarge-font);
+   line-height: 31px;
+   margin-bottom: 2rem;
+}
+
+.capable_list{
+   padding-left: 1.5rem;
+}
+.capable_con{
+   margin-block: .6rem;
+}
+.capable_con::marker{
+   color: var(--purple);
+   font-size: 1.5rem;
+}
+
+
+@media screen and (max-width: 920px) {
+   .main{
+      padding: 1.1rem 2.5rem;
+      padding-bottom: 6rem;
+   }
+   .about_title{
+      font-size: var(--sTitle-size);
+      margin: .8rem 0 1.2rem 0;
+   }
+   .about_text{
+      font-size: var(--large-font);
+      margin-bottom: 1.7rem;
+   }
+   .capable_con{
+      margin-block: .2rem;
+   }
+}
+
+
+@media screen and (max-width: 460px){
+   .main{
+      padding: 2rem 1rem 4.5rem 1rem;
+   }
+   .capable_con::marker{
+      font-size: 1.2rem;
+      margin-top: 13px;
+   }
+   .about_text{
+      font-size: var(--small-font);
+   }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
