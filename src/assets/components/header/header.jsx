@@ -58,7 +58,7 @@ function Header(){
                <li className={style.link_con}>
                   <Link onClick={toggleMenu} className={style.link} to='/todo-list'>To-do list</Link>
                </li>
-               <button data-switch-toggle='false' id="light-switch" onClick={lightSwitch} className={`${style.switch_mode} .dis_u_drg`}>
+               <button data-switch-toggle='false' id="light-switch" onClick={lightSwitch} className={`${style.switch_mode} dis_u_drg`}>
                   <span></span>
                </button>
             </ul>
@@ -72,4 +72,4 @@ function Header(){
    )
 }
 
-export default Header
+export default Header 
