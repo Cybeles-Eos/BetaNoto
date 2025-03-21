@@ -1,0 +1,19 @@
+.main{
+   max-width: 1500px;
+   margin: 0 auto;
+   padding: 10px;
+   position: relative;
+   display: flex;
+   justify-content: center;
+}
+.img{
+   margin-top: 3rem;
+   max-width: 500px;
+}
+
+@media screen and (max-width: 450px) {
+   .img{
+      margin-top: 9rem;
+      max-width: 300px;
+   }
+}

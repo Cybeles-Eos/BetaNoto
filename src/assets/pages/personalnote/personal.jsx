@@ -1,9 +1,12 @@
-
+import style from './Personal.module.css'
+import noFile from '../../images/404 Error Page not Found with people connecting a plug-bro.svg'
 
 function PersonalNote(){
    return(
       <>
-         <h2>Personal Note</h2>
+         <main className={style.main}>
+            <img src={noFile} alt="404" className={style.img} />
+         </main>
       </>
    )
 }
