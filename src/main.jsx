@@ -1,6 +1,6 @@
 import { createRoot } from 'react-dom/client'
 import './index.css'
-import { BrowserRouter, Routes, Route } from 'react-router-dom'
+import { BrowserRouter, Routes, Route, HashRouter } from 'react-router-dom'
 
 
 import Header from './assets/components/header/header.jsx'
@@ -12,7 +12,7 @@ import About from './assets/pages/about/about.jsx'
 import NoPage from './assets/pages/404/nopage.jsx'
 
 createRoot(document.getElementById('root')).render(
-  <BrowserRouter>
+  <HashRouter>
     <Routes>
       <Route path='/' element={<Header />}>
         <Route index element={<Home />}/>
@@ -22,5 +22,5 @@ createRoot(document.getElementById('root')).render(
         <Route path='/404' element={<NoPage />}/>
       </Route>
     </Routes>
-  </BrowserRouter>
+  </HashRouter>
 )
